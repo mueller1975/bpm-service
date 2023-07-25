@@ -3,6 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+node_modules/
 
 ### STS ###
 .apt_generated
@@ -31,7 +32,10 @@ build/
 
 ### VS Code ###
 .vscode/
-pom.xml
-mvnw.cmd
-mvnw.cmd
+tmlog*
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
 mvnw
+mvnw.cmd
+package-lock.json
+src/main/resources/static/dist
