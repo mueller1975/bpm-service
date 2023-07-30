@@ -8,6 +8,24 @@ CREATE TABLE IF NOT EXISTS app.leave (
 	primary key(id)
 );
 
+CREATE TABLE IF NOT EXISTS app.form_config (
+	id integer NOT NULL,
+	
+	name varchar(200) NULL,
+	flowable boolean DEFAULT false,
+	flow_name varchar(50) NULL,
+
+	privileges text,
+	json_ui text,
+
+	creator varchar(20),
+	modifier varchar(20),
+	create_time timestamp,
+	modify_time timestamp,
+
+	primary key(id)
+);
+
 CREATE TABLE IF NOT EXISTS app.form (
 	id integer NOT NULL,
 	
