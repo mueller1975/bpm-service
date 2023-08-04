@@ -1,13 +1,5 @@
 CREATE SCHEMA IF NOT EXISTS app;
 
-CREATE TABLE IF NOT EXISTS app.leave (
-	id integer NOT NULL,
-	task_id varchar(40) NOT NULL,
-	task_description varchar(50),
-	reason varchar(100),
-	primary key(id)
-);
-
 CREATE TABLE IF NOT EXISTS app.form_config (
 	id integer NOT NULL,
 	
